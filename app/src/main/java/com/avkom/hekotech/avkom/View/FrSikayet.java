@@ -71,7 +71,8 @@ prepareData();
                     String numara = value.getNumara();
                     String mesaj = value.getMesaj();
 
-
+                    String id =  dataSnapshot1.getKey();
+                    fire.setId(id);
 
 
                     fire.setIsim(isim);

@@ -5,9 +5,9 @@ package com.avkom.hekotech.avkom.classes;
  */
 
 public class Stajer {
-    String isim,mail,medeni,numara,stajTarih,stajSure,uni,dogum,adres;
+    String isim,mail,medeni,numara,stajTarih,stajSure,uni,dogum,adres,id;
 
-    public Stajer(String isim, String mail, String medeni, String numara, String stajtarih, String stajsure, String uni, String dogum, String adres) {
+    public Stajer(String isim, String mail, String medeni, String numara, String stajtarih, String stajsure, String uni, String dogum, String adres,String id) {
         this.isim = isim;
         this.mail = mail;
         this.medeni = medeni;
@@ -17,10 +17,18 @@ public class Stajer {
         this.uni = uni;
         this.dogum = dogum;
         this.adres = adres;
+        this.id =id;
     }
 public Stajer(){
 
 }
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
     public String getIsim() {
         return isim;
     }

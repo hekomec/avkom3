@@ -96,7 +96,8 @@ public class FrEleman extends android.support.v4.app.Fragment implements main.Yo
 
                     fire.setEgitim(egitim);
                     Log.d(TAG, "onDataChange: "+fire.getEgitim());
-
+                    String id =  dataSnapshot1.getKey();
+                    fire.setId(id);
                     fire.setMedeni(medeni);
                     Log.d(TAG, "onDataChange: "+fire.getMedeni());
                     fire.setNumara(numara);

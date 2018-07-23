@@ -68,6 +68,7 @@ prepareData();
                     String isim = value.getIsim();
                     String mail = value.getMail();
 
+
                     String numara = value.getNumara();
 
 
@@ -78,7 +79,8 @@ prepareData();
                     fire.setMail(mail);
                     Log.d(TAG, "onDataChange: "+fire.getMail());
 
-
+                    String id =  dataSnapshot1.getKey();
+                    fire.setId(id);
                     fire.setNumara(numara);
                     Log.d(TAG, "onDataChange: "+fire.getNumara());
 

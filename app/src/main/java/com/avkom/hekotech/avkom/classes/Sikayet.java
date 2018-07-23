@@ -5,18 +5,25 @@ package com.avkom.hekotech.avkom.classes;
  */
 
 public class Sikayet {
-    String isim,mail,mesaj,numara;
+    String isim,mail,mesaj,numara,id;
 
-    public Sikayet(String isim, String mail, String mesaj, String numara) {
+    public Sikayet(String isim, String mail, String mesaj, String numara ,String id) {
         this.isim = isim;
         this.mail = mail;
         this.mesaj = mesaj;
         this.numara = numara;
+        this.id= id;
     }
     public Sikayet(){
 
     }
+    public String getId() {
+        return id;
+    }
 
+    public void setId(String id) {
+        this.id = id;
+    }
     public String getIsim() {
         return isim;
     }

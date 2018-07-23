@@ -5,7 +5,7 @@ package com.avkom.hekotech.avkom.classes;
  */
 
 public class Eleman {
-    String isim,mail,alan,egitim,medeni,numara,askerlik,dogum,adres;
+    String isim,mail,alan,egitim,medeni,numara,askerlik,dogum,adres,id;
 
     public String getIsim() {
         return isim;
@@ -78,10 +78,17 @@ public class Eleman {
     public void setAdres(String adres) {
         this.adres = adres;
     }
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public Eleman(){
     }
-    public Eleman(String isim, String mail, String alan, String egitim, String medeni, String numara, String askerlik, String dogum, String adres) {
+    public Eleman(String isim, String mail, String alan, String egitim, String medeni, String numara, String askerlik, String dogum, String adres,String id) {
         this.isim = isim;
         this.mail = mail;
         this.alan = alan;
@@ -91,5 +98,6 @@ public class Eleman {
         this.askerlik = askerlik;
         this.dogum = dogum;
         this.adres = adres;
+        this.id = id;
     }
 }

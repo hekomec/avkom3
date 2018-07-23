@@ -5,12 +5,13 @@ package com.avkom.hekotech.avkom.classes;
  */
 
 public class Iletisim {
-    String isim,mail,numara;
+    String isim,mail,numara,id;
 
-    public Iletisim(String isim, String mail, String numara) {
+    public Iletisim(String isim, String mail, String numara,String id) {
         this.isim = isim;
         this.mail = mail;
         this.numara = numara;
+        this.id =id;
     }
     public Iletisim(){
 
@@ -38,5 +39,13 @@ public class Iletisim {
 
     public void setNumara(String numara) {
         this.numara = numara;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

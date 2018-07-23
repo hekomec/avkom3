@@ -91,7 +91,8 @@ public class FrStajer  extends android.support.v4.app.Fragment implements main.Y
 
                     fire.setStajSure(sure);
 
-
+                    String id =  dataSnapshot1.getKey();
+                    fire.setId(id);
                     fire.setMedeni(medeni);
                     Log.d(TAG, "onDataChange: "+fire.getMedeni());
                     fire.setNumara(numara);
